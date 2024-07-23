@@ -9,6 +9,22 @@
     <script>
         tailwind.config = {
             theme: {
+                screens: {
+                    'sm': '640px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                },
                 extend: {
                     colors: {
                         clifford: '#da373d',
@@ -20,7 +36,7 @@
 </head>
 
 <body>
-    <h1 class="text-clifford text-center text-9xl">Hello welcome</h1>
+    <h1 class="lg:text-center md:text-left text-3xl">Hello welcome</h1>
 
 </body>
 
