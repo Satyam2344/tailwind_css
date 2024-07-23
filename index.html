@@ -6,37 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                screens: {
-                    'sm': '640px',
-                    // => @media (min-width: 640px) { ... }
-
-                    'md': '768px',
-                    // => @media (min-width: 768px) { ... }
-
-                    'lg': '1024px',
-                    // => @media (min-width: 1024px) { ... }
-
-                    'xl': '1280px',
-                    // => @media (min-width: 1280px) { ... }
-
-                    '2xl': '1536px',
-                    // => @media (min-width: 1536px) { ... }
-                },
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
 <body>
-    <h1 class="lg:text-center md:text-left text-3xl">Hello welcome</h1>
+    <h1 class="text-center text-3xl"> Featured Cards</h1>
+    <div class="max-w-[1320px] mx-auto lg:grid grid-cols-4 gap-6 py-[20px]">
+        <div class="text-center shadow-lg">
+            <div class="overflow-hidden rounded">
+                <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+                    class="hover:scale-125 duration-1000" />
+                <h1 class="text-2xl p-5">Natural Painting</h1>
+                <p class="pb-2">Price: 200rs</p>
+            </div>
+        </div>
+        <div class="text-center shadow-lg">
+            <div class="overflow-hidden rounded">
+                <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+                    class="hover:scale-125 duration-1000" />
+                <h1 class="text-2xl p-5">Natural Painting</h1>
+                <p class="pb-2">Price: 200rs</p>
+            </div>
+        </div>
+        <div class="text-center shadow-lg">
+            <div class="overflow-hidden rounded">
+                <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+                    class="hover:scale-125 duration-1000" />
+                <h1 class="text-2xl p-5">Natural Painting</h1>
+                <p class="pb-2">Price: 200rs</p>
+            </div>
+        </div>
+        <div class="text-center shadow-lg">
+            <div class="overflow-hidden rounded">
+                <img src="https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600"
+                    class="hover:scale-125 duration-1000" />
+                <h1 class="text-2xl p-5">Natural Painting</h1>
+                <p class="pb-2">Price: 200rs</p>
+            </div>
+        </div>
+    </div>
 
 </body>
 
